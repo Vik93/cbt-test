@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <title>CBT Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="./css/normalize.css" type="text/css" rel="stylesheet" />
+    <link href="./css/style.css" type="text/css" rel="stylesheet" />
+
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="./src/script.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="158" height="76" viewBox="0 0 128 46">
+                <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                    <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                            <rdf:Description rdf:about=""/>
+                        </rdf:RDF>
+                    </x:xmpmeta>
+                    <?xpacket end="w"?></metadata>
+                <image id="logo_w" width="128" height="46" xlink:href="data:img/png;base64,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"/>
+            </svg>
+        </div>
+        <div class="table-menu">
+            <nav>
+                <ul class="nav-menu">
+                    <li>
+                        <a class="uppercase" href="#">Велосипеды</a>
+                        <ul class="menu">
+                            <li><a href="#">Горные велосипеды</a></li>
+                            <li><a href="#">Женские велосипеды</a></li>
+                            <li><a href="#">Фэтбайки</a></li>
+                            <li><a href="#">Дорожные велосипеды</a></li>
+                        </ul>
+                        <div class="arrow"></div>
+                    </li>
+                    <li>
+                        <a class="uppercase" href="#">Аксесуары</a>
+                        <ul class="menu">
+                            <li><a href="#">item 1</a></li>
+                            <li><a href="#">item 2</a></li>
+                            <li><a href="#">item 3</a></li>
+                            <li><a href="#">item 4</a></li>
+                        </ul>
+                        <div class="arrow"></div>
+                    </li>
+                    <li>
+                        <a class="uppercase" href="#">Запчасти</a>
+                        <ul class="menu">
+                            <li><a href="#">item 5</a></li>
+                            <li><a href="#">item 6</a></li>
+                            <li><a href="#">item 7</a></li>
+                            <li><a href="#">item 8</a></li>
+                        </ul>
+                        <div class="arrow"></div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="search">
+                <input type="text">
+                <div class="search-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23" height="23" viewBox="0 0 23 23">
+                        <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                            <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                                <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                                    <rdf:Description rdf:about=""/>
+                                </rdf:RDF>
+                            </x:xmpmeta>
+                            <?xpacket end="w"?></metadata>
+                        <image id="search" width="23" height="23" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAMAAADX9CSSAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABR1BMVEXuYCr////uYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCoAAADr7CjEAAAAa3RSTlMAAAlosd3x6caLMF7lmwiSy5B2gK352xmB2EgbmuIDLwRvpfQKoCcicwf6lGz9EarTlu+e0GoGiuvnUSvMvqszS/v1ThDD+EU0ojsgcury6M/Z4xUOj/O/MlnhE1SFa3XafdEChskMjJ+VZptCn1sAAAABYktHRGzMATA7AAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4wgUADcTp7apbwAAAQNJREFUKM9t0FdTwkAYheEvaMQuiL2hgkrsqMTeOxYsYO9d3/9/b7IJIczkXO08W76dI2InVFGpV4Wra2pFNCeK6+px09Do8yYLItHmWEsrtLV73gGdXepedw/09rketw73i5sBGHQ9QiIpXoZgWPkIpEosxihjyseZmPS5TDGtPI3uZ0kxY0+WWebKPEPCtH2ehTKPsajeWYJlv6+wqjwJaz5eh4zz/yhslFxnM+S4uQXbru7ssrdf7OfAqu0wa4ocHZ/AqeH1mc1ZO7mzc6fqi0uv/3zhyrHrm1u4yxdd5P7hMV14ilurZ3gxPC9Fe4W39wDXPuDzK8C1b/gJcu03/PcPca86iCf0YO8AAAAASUVORK5CYII="/>
+                    </svg>
+                </div>
+            </div>
+            <div class="contact-us">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23" height="33" viewBox="0 0 13 23">
+                        <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                            <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                                <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                                    <rdf:Description rdf:about=""/>
+                                </rdf:RDF>
+                            </x:xmpmeta>
+                            <?xpacket end="w"?></metadata>
+                        <image id="facebook-logo" width="13" height="23" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAXCAMAAADneDWzAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAolBMVEX////uYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCoAAADEp/cOAAAANHRSTlMAWLbl8qKZyWK569Mo/JV3S0CrO5ElkHGyscThXtSwl8im8/b6hgIPDkgNAS2UPZxFMvCKejubIwAAAAFiS0dENd622WsAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjCBQAOCp/Kz2oAAAAhUlEQVQY063QSRaCQAwE0IhpccYJpZ1t1HbAAez7n00rwBP31qr+JnkJkaTm1ZlZ5Wg4iS9o5nAtUbtQB+ii9fpBMICG0IiKjKFJqRCaSp1Feg4ttI6WtHLfrMmraEPbinakDMdoezbmQEd7OkPqYu0VYxPoVu67Q4//6vlzX5p9/vVCewObaR8ZsedNBwAAAABJRU5ErkJggg=="/>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="33" height="33" viewBox="0 0 23 23">
+                        <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                            <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                                <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                                    <rdf:Description rdf:about=""/>
+                                </rdf:RDF>
+                            </x:xmpmeta>
+                            <?xpacket end="w"?></metadata>
+                        <image id="instagram-logo_" data-name="instagram-logo " width="23" height="23" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAMAAADX9CSSAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABSlBMVEXuYCr////uYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCoAAADn9aV5AAAAbHRSTlMAAEuu6+yxUJ+noYAvGxoWEmusQj0EM024gXvTY8P1HxhUaFbnEfoUjpQ4yZUCBRm/xqjH80A6mxU2K1y7YHOXi3xfwrcuIxyWMOWkyLydutAQmAv3HVhvWyD7em1I/TT5U6p1JiVw/rWp8PG9LeNfAAAAAWJLR0RtuwYArQAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+MIFAA4GcD7XL4AAAEcSURBVCjPZdFXU0IxEIbhjQpiQbFgBUURsaKIFbtiF7Gh2Ht///+1OQE04ndzZp7Jye5mRUTKyiv4jctdqZTS7KE0VY5XQ02tt66Yel8DNCppgmaxovyqBVqljXabpYNOFSAoXXTnIdTTG/aK9EFE0S8QNTxgKg7K0PDIaAy0jzk8DvGJICR0jypqvM6cnpzSn2kXM9ojRZ+FOXNbUv9u+TzxQjsLLFq+xHLBV1i1fI31gqcIWB6CDcObsGW5bONyCu/ssvfTj+l/H9IHGTj0az8ynp/32MzriTlznWg/JZuvmD07z13o9zTzXkqaqz/v6fg1Cbnh9q7Ek/c8iDzC07MvUozv5fWNd2e/H//26zZ7l3Dq08KvTE7f9Q1OhmHNQFWE1AAAAABJRU5ErkJggg=="/>
+                    </svg>
+                </a>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="29" height="33" viewBox="0 0 19 23">
+                        <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                            <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                                <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                                    <rdf:Description rdf:about=""/>
+                                </rdf:RDF>
+                            </x:xmpmeta>
+                            <?xpacket end="w"?></metadata>
+                        <image id="youtube-logo" width="19" height="23" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAXCAMAAADeH4ToAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABxVBMVEXuYCr////uYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCoAAABJ3LSkAAAAlXRSTlMAAAb3lPChruszOxHl5s2G2kJ8HmQ8nSgrrC5J9F15zO9f3j7OfWV00gzoWt9nesvgJMeCblz6V/k4/YqAXvIJz0Y5laSXqqCZp6OpVEqF9byWb/wTnm3ps9fEkwJwpco9hPbsP2lrGckiT1B3kk4cGKJTNg9NFRb7YY0vkXXB1pAstbCyNbGIuFZYqB1jieT48+2mDSjRoYAAAAABYktHRJaRaSs5AAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4wgUADcpYbpw3QAAAUlJREFUGNNlz1k3QgEUBeBzDQ3KkCi3IiVTSEQoSpOIJAllzpCiEBKZ51mG83+Fe9dqZb+cvb6nfQAgJzcP8hlAhSCIn8NksbEgyzjcwiIoLuFBKb+snDIQoLACSZYIxZI82ioRqqRQLZPXKGppq0Oob2hUNjVnWAuCqhWUMnVbu4a2DoRObVd3j06v66Wtz2AEqVYDpLzfRFtmfs1sIa22AdI+OEQ6GI5h+wgBTszOKLjGVO5xR7oqbB4KAd0TIPSm2yRQJIEpnAZUS33+mdm5eVxYXMIALKMX0Lyyyrca14LroTChwLQJAJ0bm+wIB6O9W77tHcqisapdy171vjt+wOMm/sx0eJQ85mDsRIinZwEw4DmgOH6RjIAqeBm6IpgIAby+wVtR+O7+IfmIT88v6X36f3/4AV7fEgaXNpCSuFIpw7vn4/PrG0QlcXJW+05CAAAAAElFTkSuQmCC"/>
+                    </svg>
+                </a>
+                <p>
+                    <a href="tel:+38 (063) 940 4740">+38 (063) 940 4740</a>
+                </p>
+            </div>
+        </div>
+        <div class="hamburger" onclick="openMenu()">
+            <?xml version="1.0" ?>
+            <!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+            <svg height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/>
+            </svg>
+        </div>
+    </header>
+    <div id="slider-block">
+        <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-2" data-slide-to="1"></li>
+                <li data-target="#carousel-example-2" data-slide-to="2"></li>
+                <li data-target="#carousel-example-2" data-slide-to="3"></li>
+                <li data-target="#carousel-example-2" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <div class="view">
+                        <img class="d-block w-100" src="./img/banner.png" height="625"
+                             alt="First slide">
+                        <div class="mask rgba-black-light"></div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="view">
+                        <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" height="625"
+                             alt="Second slide">
+                        <div class="mask rgba-black-strong"></div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="view">
+                        <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg" height="625"
+                             alt="Third slide">
+                        <div class="mask rgba-black-slight"></div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="view">
+                        <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" height="625"
+                             alt="Second slide">
+                        <div class="mask rgba-black-strong"></div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="view">
+                        <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg" height="625"
+                             alt="Third slide">
+                        <div class="mask rgba-black-slight"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="our-advantages">
+        <h1 class="text-center">Наши преимущества</h1>
+        <div class="row">
+            <div class="col-lg-6 first-block">
+                <div class="orange-background">
+                    <div class="item tools"></div>
+                </div>
+                <div class="title">
+                    ПРЕДПРОДАЖНАЯ СБОРКА И НАСТРОЙКА
+                    <p class="text">
+                        Мы предоставляем услугу сборки,настройки и предпродажной подготовки перед тем как велосипед отправится на почту,это делается БЕСПЛАТНО. Бесплатная сборка и настройка не распостраняется на велосипеды брендов:
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="orange-background">
+                    <div class="item support"></div>
+                </div>
+                <div class="title">
+                    ПОМОЩЬ В ВЫБОРЕ
+                    <p class="text">
+                        Имея большой опыт в вело продаже, мы поможем сделать правильный выбор,правильно подберем размер рамы, учтем все ваши пожелания.
+                        С 2014 года мы занимаемся продажей велосипедов,сами
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="orange-background">
+                    <div class="item book"></div>
+                </div>
+                <div class="title">
+                    СБОРКА И НАСТРОЙКА
+                    <p class="text">
+                        Мы знакомы с велосипедами не на теории,а на практике. На большинство велосипедов снимаем видео обзоры. На видео мы рассказываем о комплектации байка,где его лучше
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="orange-background">
+                    <div class="item headset"></div>
+                </div>
+                <div class="title">
+                    ВИДЕО ОБЗОРЫ
+                    <p class="text">
+                        Мы знакомы с велосипедами не на теории,а на практике. На большинство велосипедов снимаем видео обзоры.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="about-us">
+        <div class="background-filter">
+            <h2 class="text-center">О нас</h2>
+            <p>Каждый из всех людей хотя бы один раз в своей жизни пробовал прокатиться на велосипеде и наверняка на всю жизнь запомнил непередаваемые эти ощущения счастья и равновесия.</p>
+            <br>
+            <p>История нашего интернет-магазина "Best-bike" началась в 2009 году. Мы заядлые любители велоспорта и как только у нас появляется свободное время,мы едем на трассу здоровья и наматываем там не один круг. А также участвуем во всех любительских вело соревнованиях. Мы и Вас призываем приобщаться к велосипедной культуре,ведь в нашей стране она стремительно развивается.
+                Катаясь на велосипеде мы ведем здоровый образ жизни, тем самым продлевая здоровье себе и своим детям.</p>
+            <br>
+            <p>Мы продаем велосипеды самых разных производителей. У нас каждый найдет для себя велосипед, велосипедные аксессуары, велосипедные запчасти,получит обширную и грамотною консультацию.</p>
+        </div>
+    </div>
+    <div id="need-consultation">
+        <h3 class="text-center">Нужна консультация?</h3>
+        <div class="container">
+            <div class="row">
+                <p>Оставьте свои данные и мы свяжемся с вами в ближайшее время</p>
+                <div class="send-form">
+                    <form name="consultation">
+                        <div class="name">
+                            <label for="name">Имя</label>
+                            <input id="name" onclick="fadeOut('name')" type="text" required>
+                        </div>
+                        <div class="tel">
+                            <label for="tel">Телефон</label>
+                            <input id="tel" onclick="fadeOut('tel')" type="text" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary send-btn">Отправить</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="logo-footer">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="158" height="76" viewBox="0 0 128 46">
+                <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                    <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                            <rdf:Description rdf:about=""/>
+                        </rdf:RDF>
+                    </x:xmpmeta>
+                    <?xpacket end="w"?></metadata>
+                <image id="logo_w" width="128" height="46" xlink:href="data:img/png;base64,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"/>
+            </svg>
+        </div>
+        <div class="contact-us">
+            <a href="https://www.facebook.com/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="30" viewBox="0 0 13 23">
+                    <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                        <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                            <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                                <rdf:Description rdf:about=""/>
+                            </rdf:RDF>
+                        </x:xmpmeta>
+                        <?xpacket end="w"?></metadata>
+                    <image id="facebook-logo" width="11" height="21" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAXCAMAAADneDWzAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAolBMVEX////uYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCoAAADEp/cOAAAANHRSTlMAWLbl8qKZyWK569Mo/JV3S0CrO5ElkHGyscThXtSwl8im8/b6hgIPDkgNAS2UPZxFMvCKejubIwAAAAFiS0dENd622WsAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjCBQAOCp/Kz2oAAAAhUlEQVQY063QSRaCQAwE0IhpccYJpZ1t1HbAAez7n00rwBP31qr+JnkJkaTm1ZlZ5Wg4iS9o5nAtUbtQB+ii9fpBMICG0IiKjKFJqRCaSp1Feg4ttI6WtHLfrMmraEPbinakDMdoezbmQEd7OkPqYu0VYxPoVu67Q4//6vlzX5p9/vVCewObaR8ZsedNBwAAAABJRU5ErkJggg=="/>
+                </svg>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 23 23">
+                    <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                        <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                            <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                                <rdf:Description rdf:about=""/>
+                            </rdf:RDF>
+                        </x:xmpmeta>
+                        <?xpacket end="w"?></metadata>
+                    <image id="instagram-logo_" data-name="instagram-logo " width="21" height="21" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAMAAADX9CSSAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABSlBMVEXuYCr////uYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCoAAADn9aV5AAAAbHRSTlMAAEuu6+yxUJ+noYAvGxoWEmusQj0EM024gXvTY8P1HxhUaFbnEfoUjpQ4yZUCBRm/xqjH80A6mxU2K1y7YHOXi3xfwrcuIxyWMOWkyLydutAQmAv3HVhvWyD7em1I/TT5U6p1JiVw/rWp8PG9LeNfAAAAAWJLR0RtuwYArQAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+MIFAA4GcD7XL4AAAEcSURBVCjPZdFXU0IxEIbhjQpiQbFgBUURsaKIFbtiF7Gh2Ht///+1OQE04ndzZp7Jye5mRUTKyiv4jctdqZTS7KE0VY5XQ02tt66Yel8DNCppgmaxovyqBVqljXabpYNOFSAoXXTnIdTTG/aK9EFE0S8QNTxgKg7K0PDIaAy0jzk8DvGJICR0jypqvM6cnpzSn2kXM9ojRZ+FOXNbUv9u+TzxQjsLLFq+xHLBV1i1fI31gqcIWB6CDcObsGW5bONyCu/ssvfTj+l/H9IHGTj0az8ynp/32MzriTlznWg/JZuvmD07z13o9zTzXkqaqz/v6fg1Cbnh9q7Ek/c8iDzC07MvUozv5fWNd2e/H//26zZ7l3Dq08KvTE7f9Q1OhmHNQFWE1AAAAABJRU5ErkJggg=="/>
+                </svg>
+            </a>
+            <a href="https://www.youtube.com/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="28" viewBox="0 0 19 23">
+                    <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                        <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                            <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                                <rdf:Description rdf:about=""/>
+                            </rdf:RDF>
+                        </x:xmpmeta>
+                        <?xpacket end="w"?></metadata>
+                    <image id="youtube-logo" width="19" height="23" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAXCAMAAADeH4ToAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABxVBMVEXuYCr////uYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCruYCoAAABJ3LSkAAAAlXRSTlMAAAb3lPChruszOxHl5s2G2kJ8HmQ8nSgrrC5J9F15zO9f3j7OfWV00gzoWt9nesvgJMeCblz6V/k4/YqAXvIJz0Y5laSXqqCZp6OpVEqF9byWb/wTnm3ps9fEkwJwpco9hPbsP2lrGckiT1B3kk4cGKJTNg9NFRb7YY0vkXXB1pAstbCyNbGIuFZYqB1jieT48+2mDSjRoYAAAAABYktHRJaRaSs5AAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4wgUADcpYbpw3QAAAUlJREFUGNNlz1k3QgEUBeBzDQ3KkCi3IiVTSEQoSpOIJAllzpCiEBKZ51mG83+Fe9dqZb+cvb6nfQAgJzcP8hlAhSCIn8NksbEgyzjcwiIoLuFBKb+snDIQoLACSZYIxZI82ioRqqRQLZPXKGppq0Oob2hUNjVnWAuCqhWUMnVbu4a2DoRObVd3j06v66Wtz2AEqVYDpLzfRFtmfs1sIa22AdI+OEQ6GI5h+wgBTszOKLjGVO5xR7oqbB4KAd0TIPSm2yRQJIEpnAZUS33+mdm5eVxYXMIALKMX0Lyyyrca14LroTChwLQJAJ0bm+wIB6O9W77tHcqisapdy171vjt+wOMm/sx0eJQ85mDsRIinZwEw4DmgOH6RjIAqeBm6IpgIAby+wVtR+O7+IfmIT88v6X36f3/4AV7fEgaXNpCSuFIpw7vn4/PrG0QlcXJW+05CAAAAAElFTkSuQmCC"/>
+                </svg>
+            </a>
+            <p>Bike Sport 2011-2018</p>
+        </div>
+        <div class="nav-footer">
+            <div>
+                <a href="#">Горные</a>
+                <a href="#">Дорожные</a>
+            </div>
+            <div>
+                <a href="#">Фэтбайки</a>
+                <a href="#">Женские</a>
+            </div>
+            <div>
+                <a href="tel:+38 (063) 940 4740">+38 (063) 940 4740</a>
+                <p>с 9.00 до 21.00 без выходных</p>
+            </div>
+        </div>
+    </footer>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="//code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

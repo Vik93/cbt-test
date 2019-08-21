@@ -1,0 +1,539 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../font/Roboto.ttf);
+}
+@font-face {
+    font-family: Roboto Bold;
+    src: url(../font/Robotobold.ttf);
+}
+@font-face {
+    font-family: Roboto Medium;
+    src: url(../font/Robotomedium.ttf);
+}
+body{
+    font-family: Roboto!important;
+}
+input{
+    width: 100%;
+    background: transparent;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    border-width: 1px;
+    padding: 0;
+}
+input:focus{
+    outline: none;
+}
+label{
+    font-size: 16px;
+    color: rgb(238, 96, 42);
+    margin: 0!important;
+    position: absolute;
+    transition: all .3s;
+}
+header{
+    height: 125px;
+    background-color: rgb(34, 49, 75);
+    display: flex!important;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 115px;
+}
+header nav{
+    width: 510px;
+    margin: 7px 0 0 -45px;
+}
+header nav ul.nav-menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+header nav ul.nav-menu li{
+    position: relative;
+    padding-right: 25px;
+}
+header nav ul.nav-menu li .arrow{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: -5px;
+    top: 2px;
+    font-size: 38px;
+}
+header nav ul.nav-menu li .arrow:after {
+    content: '\203A';
+    position: absolute;
+    right: 0;
+    top: -20px;
+    color: #fff;
+    transition: all .3s;
+}
+header nav ul.nav-menu li a.uppercase{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 21px;
+}
+header nav ul.nav-menu li a.uppercase:hover{
+    color: rgb(238, 96, 42);
+    text-decoration: none;
+}
+header nav ul.nav-menu li:hover a.uppercase{
+    color: rgb(238, 96, 42);
+}
+header nav ul.nav-menu li:hover .arrow{
+    top: 7px;
+}
+header nav ul.nav-menu li:hover .arrow:after{
+    transform: rotate(90deg);
+}
+.hamburger{
+    display: none;
+}
+.table-menu{
+    display: contents;
+}
+.menu{
+    display: none;
+    list-style: none;
+    position: absolute;
+    width: 255px;
+    background: rgb(34, 49, 75);
+    left: -15px;
+    flex-direction: column;
+    line-height: 38px;
+    padding: 5px 18px 20px;
+    z-index: 9;
+}
+header nav ul.nav-menu li:hover .menu{
+    display: flex;
+}
+.menu li a{
+    color: #fff;
+}
+.menu li a:hover{
+    color: rgb(238, 96, 42);
+    text-decoration: none;
+}
+.search{
+    width: 315px;
+    display: flex;
+}
+.search-icon{
+    position: relative;
+    right: -10px;
+    cursor: pointer;
+}
+.contact-us{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 155px;
+    justify-content: space-evenly;
+}
+.contact-us p{
+    color: #fff;
+    margin: 10px 0 5px 0;
+}
+.contact-us p a{
+    color: #fff;
+}
+.contact-us p a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+#slider-block .carousel-indicators li{
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+    opacity: 1;
+}
+#slider-block .carousel-indicators li.active{
+    background-color: rgb(238, 96, 42);
+    height: 15px;
+    width: 15px;
+}
+
+#our-advantages{
+    background-color: rgb(11, 28, 56);
+    margin-top: 1px;
+    padding: 80px 115px;
+}
+#our-advantages h1,
+#about-us h2,
+#need-consultation h3{
+    font-family: Roboto Bold;
+    font-size: 35px;
+    color: #fff;
+    text-transform: uppercase;
+}
+#our-advantages h1{
+    margin-bottom: 80px;
+}
+#our-advantages p{
+    color: #fff;
+}
+#our-advantages .title{
+    /*margin: 0 0 10px 30px;*/
+    float: left;
+    width: 75%;
+    font-family: Roboto Medium;
+    font-size: 22px;
+    color: #fff;
+    line-height: 1;
+}
+#our-advantages p.text{
+    width: calc(100% - 100px);
+    /*margin: 0 0 0 30px;*/
+    float: left;
+    font-size: 16px;
+    font-family: Roboto;
+    line-height: 1.5;
+    margin-top: 15px;
+}
+#our-advantages .first-block{
+    margin-bottom: 50px;
+}
+#our-advantages .orange-background{
+    width: 70px;
+    height: 70px;
+    background-color: rgb(238, 96, 42);
+    position: relative;
+    float: left;
+    margin-right: 30px;
+}
+#our-advantages .orange-background .item{
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+#our-advantages .orange-background .tools{
+    background: url('../img/tools.png');
+    width: 50px;
+    height: 48px;
+}
+#our-advantages .orange-background .support{
+    background: url('../img/support.png');
+    width: 50px;
+    height: 48px;
+}
+#our-advantages .orange-background .book{
+    background: url('../img/book.png');
+    width: 44px;
+    height: 50px;
+}
+#our-advantages .orange-background .headset{
+    background: url('../img/headset.png');
+    width: 50px;
+    height: 50px;
+}
+#about-us{
+    background: url("../img/base.png");
+    background-size: cover;
+
+}
+#about-us p{
+    color: #fff;
+    width: 930px;
+    margin: 0 auto;
+    font-size: 18px;
+}
+#about-us h2{
+    margin-bottom: 80px;
+}
+#about-us .background-filter{
+    background-color: rgb(34, 49, 75);
+    opacity: 0.8;
+    padding: 80px 115px;
+}
+#need-consultation{
+    padding: 80px 115px;
+}
+#need-consultation h3{
+    color: #000;
+    margin-bottom: 25px;
+}
+#need-consultation .row{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#need-consultation .send-form,
+#need-consultation .send-form .name,
+#need-consultation .send-form .tel{
+    display: flex;
+    align-items: flex-end;
+    margin-right: 30px;
+}
+#need-consultation .send-form{
+    margin-right: 0;
+}
+#need-consultation .send-form .name .active,
+#need-consultation .send-form .tel .active{
+    margin-top: -20px!important;
+}
+#need-consultation .send-form .send-btn{
+    background-color: rgb(238, 96, 42);
+    border-color: rgb(238, 96, 42);
+    text-transform: uppercase;
+    border-radius: 0;
+    padding: 5px 30px;
+    margin: 0;
+}
+#need-consultation .send-form .send-btn:focus{
+    outline: none;
+    box-shadow: none;
+}
+#need-consultation .send-form form{
+    display: flex;
+}
+#need-consultation .send-form input{
+    height: 25px;
+    margin-left: 1px;
+    border-color: #000;
+}
+footer{
+    background-color: rgb(11, 28, 56);
+    min-height: 125px;
+    display: flex!important;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 115px;
+}
+footer .contact-us{
+    justify-content: end;
+}
+footer .contact-us a{
+    margin-right: 10px;
+}
+footer .contact-us a:last-child{
+    margin-right: 0;
+}
+footer .nav-footer{
+    display: flex;
+    width: 590px;
+}
+footer .nav-footer div{
+    margin-right: 90px;
+    display: flex;
+    flex-direction: column;
+}
+footer .nav-footer div:last-child{
+    margin-right: 0;
+}
+footer .nav-footer div a{
+    font-size: 16px;
+    font-family: Roboto Medium;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 2.125;
+    text-decoration: none;
+}
+footer .nav-footer div a:hover{
+    color: rgb(238, 96, 42);
+}
+footer .nav-footer div a:last-child{
+    font-size: 14px;
+}
+footer .nav-footer div p{
+    color: #fff;
+    font-size: 14px;
+}
+@media screen and (max-device-width: 1850px) {
+    #our-advantages p.text{
+        width: calc(100% - 130px);
+    }
+}
+@media screen and (max-device-width: 1520px) {
+    header{
+        padding: 0 40px;
+    }
+    #our-advantages p.text{
+        width: calc(100% - 120px);
+        float: none;
+    }
+}
+@media screen and (max-device-width: 1420px) {
+    #our-advantages p.text{
+        width: calc(100% - 80px);
+    }
+}
+@media screen and (max-device-width: 1366px) {
+    header .contact-us{
+        display: none;
+    }
+    header nav{
+        margin-left: 0;
+    }
+    .search{
+        width: 200px;
+    }
+    #our-advantages p.text{
+        width: calc(100% - 40px);
+    }
+}
+@media screen and (max-device-width: 1200px) {
+    #our-advantages p.text{
+        width: 100%;
+    }
+    footer{
+        padding: 0 30px;
+    }
+}
+@media screen and (max-device-width: 1100px) {
+    #our-advantages .title{
+        font-size: 18px;
+        float: none;
+        width: 100%;
+    }
+    #about-us p{
+        width: 100%;
+        margin: 0;
+    }
+}
+@media screen and (max-device-width: 991px) {
+    footer .nav-footer{
+        width: auto;
+    }
+    footer .nav-footer div{
+        margin-right: 10px;
+    }
+    .hamburger{
+        display: block;
+    }
+    .hamburger svg{
+        width: 62px;
+        height: 62px;
+    }
+    .table-menu{
+        display: none;
+        background-color: rgb(34, 49, 75);
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 125px;
+        z-index: 20;
+        padding: 10px 20px;
+    }
+    .table-menu.open{
+        display: flex;
+    }
+    #our-advantages p.text {
+        float: left;
+    }
+    header nav{
+        width: auto;
+        margin: 0;
+    }
+    header nav ul.nav-menu{
+        flex-direction: column;
+    }
+    .search {
+        margin-top: 10px;
+    }
+    header .contact-us{
+        display: flex;
+        margin-top: 20px;
+        justify-content: space-around;
+        width: 195px;
+    }
+    .d-block{
+        height: auto;
+    }
+}
+@media screen and (max-device-width: 768px) {
+    footer .nav-footer{
+        flex-direction: column;
+    }
+    #need-consultation .send-form form{
+        flex-direction: column;
+    }
+    #need-consultation .send-form,
+    #need-consultation .send-form .name,
+    #need-consultation .send-form .tel{
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    #our-advantages{
+        padding: 40px 60px;
+    }
+    #our-advantages h1 {
+        margin-bottom: 40px;
+    }
+    #our-advantages p.text,
+    #our-advantages .title{
+        width: 100%;
+    }
+    #our-advantages .col-lg-6 {
+        margin-bottom: 50px;
+    }
+    #our-advantages .col-lg-6:last-child {
+        margin-bottom: 0;
+    }
+    #about-us .background-filter{
+        padding: 40px 60px;
+    }
+    #about-us h2 {
+        margin-bottom: 40px;
+    }
+    #need-consultation {
+        padding: 40px 60px;
+    }
+}
+@media screen and (max-device-width: 600px) {
+    footer{
+        padding: 20px 30px;
+        flex-wrap: wrap;
+    }
+    footer .contact-us{
+        justify-content: center;
+        width: 200px;
+    }
+}
+@media screen and (max-device-width: 600px) {
+    footer{
+        text-align: center;
+    }
+    footer .contact-us {
+        width: 230px;
+        text-align: center;
+    }
+    footer .logo-footer,
+    footer .contact-us,
+    footer .nav-footer{
+        margin: 0 auto 15px;
+    }
+    footer .nav-footer{
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-device-width: 440px) {
+    #our-advantages h1,
+    #about-us h2,
+    #need-consultation h3{
+        font-size: 24px;
+    }
+    #need-consultation,
+    #about-us .background-filter,
+    #our-advantages{
+        padding: 15px 30px;
+    }
+    #our-advantages h1,
+    #about-us h2 {
+        margin-bottom: 15px;
+    }
+    #our-advantages .col-lg-6 {
+        margin-bottom: 25px;
+        padding: 0;
+    }
+    #our-advantages .title {
+        font-size: 16px;
+    }
+}
