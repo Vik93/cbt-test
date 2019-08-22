@@ -246,13 +246,13 @@
                     <form name="consultation">
                         <div class="name">
                             <label for="name">Имя</label>
-                            <input id="name" onclick="fadeOut('name')" type="text" required>
+                            <input id="name" minLength="3" onclick="fadeOut('name')" type="text" required>
                         </div>
                         <div class="tel">
                             <label for="tel">Телефон</label>
                             <input id="tel" onclick="fadeOut('tel')" type="text" required>
                         </div>
-                        <button type="submit" class="btn btn-primary send-btn">Отправить</button>
+                        <button type="submit" onclick="sendForm()" class="btn btn-primary send-btn">Отправить</button>
                     </form>
 
                 </div>
